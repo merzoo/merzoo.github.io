@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>一次移动端重构 | 抹猪油の一隅</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="接近年末，有一些空余时间，开始考虑对一个 vue1.x 版本的老项目进行重构  3个问题 现存的移动端适配方案很草率，是根据媒体查询做了一个简单的适配  打包构建非常速度慢，每次都是全局构建 没有做代码风格检测和测试  3个解法 选用 rem 或 vm 方案进行移动端适配 采用webpack打包，后续优化打包速度 加入eslint检查（在standard标准配置上修改），加入测试  待续">
-<meta name="keywords" content="前端工程,性能优化,重构">
+  <meta name="description" content="接近年末，有一些空余时间，开始考虑对一个 vue1.x 版本的老项目进行重构  3个问题 现存的移动端适配方案很草率，是根据媒体查询做了一个简单的适配  打包构建非常速度慢，每次都是全局构建 没有做代码风格检测和测试  3个解法 选用 rem 或 vm 方案进行移动端适配 采用webpack打包，后续优化打包速度 统一使用es6语法，用babel转义，加入eslint检查（在standard标准">
+<meta name="keywords" content="性能优化,前端工程,重构">
 <meta property="og:type" content="article">
 <meta property="og:title" content="一次移动端重构">
 <meta property="og:url" content="http://yoursite.com/2018/01/03/一次移动端重构/index.html">
 <meta property="og:site_name" content="抹猪油の一隅">
-<meta property="og:description" content="接近年末，有一些空余时间，开始考虑对一个 vue1.x 版本的老项目进行重构  3个问题 现存的移动端适配方案很草率，是根据媒体查询做了一个简单的适配  打包构建非常速度慢，每次都是全局构建 没有做代码风格检测和测试  3个解法 选用 rem 或 vm 方案进行移动端适配 采用webpack打包，后续优化打包速度 加入eslint检查（在standard标准配置上修改），加入测试  待续">
-<meta property="og:updated_time" content="2018-03-02T09:32:39.243Z">
+<meta property="og:description" content="接近年末，有一些空余时间，开始考虑对一个 vue1.x 版本的老项目进行重构  3个问题 现存的移动端适配方案很草率，是根据媒体查询做了一个简单的适配  打包构建非常速度慢，每次都是全局构建 没有做代码风格检测和测试  3个解法 选用 rem 或 vm 方案进行移动端适配 采用webpack打包，后续优化打包速度 统一使用es6语法，用babel转义，加入eslint检查（在standard标准">
+<meta property="og:updated_time" content="2018-03-02T09:34:31.259Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="一次移动端重构">
-<meta name="twitter:description" content="接近年末，有一些空余时间，开始考虑对一个 vue1.x 版本的老项目进行重构  3个问题 现存的移动端适配方案很草率，是根据媒体查询做了一个简单的适配  打包构建非常速度慢，每次都是全局构建 没有做代码风格检测和测试  3个解法 选用 rem 或 vm 方案进行移动端适配 采用webpack打包，后续优化打包速度 加入eslint检查（在standard标准配置上修改），加入测试  待续">
+<meta name="twitter:description" content="接近年末，有一些空余时间，开始考虑对一个 vue1.x 版本的老项目进行重构  3个问题 现存的移动端适配方案很草率，是根据媒体查询做了一个简单的适配  打包构建非常速度慢，每次都是全局构建 没有做代码风格检测和测试  3个解法 选用 rem 或 vm 方案进行移动端适配 采用webpack打包，后续优化打包速度 统一使用es6语法，用babel转义，加入eslint检查（在standard标准">
   
     <link rel="alternative" href="/atom.xml" title="抹猪油の一隅" type="application/atom+xml">
   
@@ -185,7 +185,7 @@
 <h4 id="3个解法"><a href="#3个解法" class="headerlink" title="3个解法"></a>3个解法</h4><ol>
 <li>选用 rem 或 vm 方案进行移动端适配</li>
 <li>采用webpack打包，后续优化打包速度</li>
-<li>加入eslint检查（在standard标准配置上修改），加入测试</li>
+<li>统一使用es6语法，用babel转义，加入eslint检查（在standard标准配置上修改），加入测试</li>
 </ol>
 <h4 id="待续"><a href="#待续" class="headerlink" title="待续"></a>待续</h4>
       
@@ -221,11 +221,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">前端工程</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">性能优化</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">性能优化</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">前端工程</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
@@ -427,7 +427,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
+                <a href="javascript:void(0)" class="js-tag color5">性能优化</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -439,7 +439,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">性能优化</a>
+                <a href="javascript:void(0)" class="js-tag color3">重构</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -447,11 +447,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">重构</a>
+                <a href="javascript:void(0)" class="js-tag color4">web</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">web</a>
+                <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
               </li>
              
               <li class="article-tag-list-item">
