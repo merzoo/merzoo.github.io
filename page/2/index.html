@@ -154,6 +154,125 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-NVM简明指南" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/10/26/NVM简明指南/">NVM简明指南</a>
+    </h1>
+  
+
+        
+        <a href="/2016/10/26/NVM简明指南/" class="archive-article-date">
+  	<time datetime="2016-10-26T14:01:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-10-26</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+         <font color="red">本教程适用于windows用户</font>
+
+<h3 id="安装操作步骤"><a href="#安装操作步骤" class="headerlink" title="安装操作步骤"></a>安装操作步骤</h3><ol>
+<li><p><strong>下载 <a href="http://pan.baidu.com/s/1c2C77sk" title="nvm-windows" target="_blank" rel="noopener">nvm-windows</a></strong></p>
+</li>
+<li><p><strong>解压到一个全英文目录(建议存放在C盘)</strong></p>
+</li>
+<li><p><strong>修改settings文件</strong></p>
+<ul>
+<li>root =&gt; nvm.exe 的位置</li>
+<li>path =&gt; nodejs的快捷方式的位置（与nvm文件夹平行或自选）</li>
+<li>arch =&gt; 32/64 （你操作系统位数）</li>
+</ul>
+</li>
+<li><p><strong>加入环境变量</strong></p>
+<ul>
+<li>win + r =&gt; 输入sysdm.cpl =&gt; 高级-环境变量-用户变量</li>
+<li>新建 NVM_HOME = root</li>
+<li>新建 NVM_SYMLINK = path</li>
+</ul>
+</li>
+<li><p><strong>测试变量是否成功</strong></p>
+<ul>
+<li><p>cmd 输入<code>PATH</code>查看所有的用户变量是否有更新</p>
+</li>
+<li><p>cmd 输入<code>set xx</code>查看你想要查看的变量地址是否正确，如<code>set NVM_HOME</code></p>
+</li>
+</ul>
+</li>
+<li><p><strong>测试nvm是否安装成功</strong></p>
+<ul>
+<li><p><code>$nvm</code> =&gt; nvm help … OK</p>
+</li>
+<li><p><code>$nvm ls</code> =&gt; 列出所有安装的node版本</p>
+</li>
+<li><p><code>$nvm use</code> =&gt; 使用需要的node版本</p>
+</li>
+<li><p><code>$nvm install/uninstall</code> =&gt; 安装卸载</p>
+</li>
+</ul>
+</li>
+</ol>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">前端工程</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/10/26/NVM简明指南/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-null和undefined的区别" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -529,99 +648,9 @@
 
 
   
-    <article id="post-学习Javascript闭包（Closure）所感" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/13/学习Javascript闭包（Closure）所感/">学习Javascript闭包（Closure）所感</a>
-    </h1>
-  
-
-        
-        <a href="/2016/03/13/学习Javascript闭包（Closure）所感/" class="archive-article-date">
-  	<time datetime="2016-03-13T14:14:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-03-13</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>接触编程时间不久，闭包这个问题也困扰了我许久。曾百度google之后无果，解释大多晦涩难懂。随着阅读的增加，对闭包也有了一些自己的较为清晰的理解。<strong>所谓的闭包：通俗的说就是能够读取其他函数内部变量的函数</strong>。</p>
-</blockquote>
-<h4 id="闭包的作用"><a href="#闭包的作用" class="headerlink" title="闭包的作用"></a>闭包的作用</h4><ol>
-<li>读取其他函数内部变量。</li>
-<li>将变量存储在内存之中，防止js的垃圾回收机制。</li>
-<li>方便传参。</li>
-<li>形成“块级作用域”显示和隐藏一些变量，减少全局变量。</li>
-</ol>
-<h4 id="闭包的影响："><a href="#闭包的影响：" class="headerlink" title="闭包的影响："></a>闭包的影响：</h4><ol>
-<li>内存溢出。由于阻止了变量的垃圾回收，使得变量长期存在于内存之中，性能下降，可能会导致内存溢出！</li>
-<li>闭包会在父函数外部，改变父函数内部变量的值。如果你把父函数当作对象（object）使用，把闭包当作它的公用方法（Public Method），把内部变量当作它的私有属性（private value），这时一定要小心，不要随便改变父函数内部变量的值。</li>
-</ol>
-<h4 id="关于闭包的思考题："><a href="#关于闭包的思考题：" class="headerlink" title="关于闭包的思考题："></a>关于闭包的思考题：</h4><p>两道闭包的思考题，由输出的结果加深一下对闭包的理解.</p>
-<p>eg.1</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">var name = &quot;The Window&quot;;</span><br><span class="line">var object = &#123;</span><br><span class="line">　　name : &quot;My Object&quot;,</span><br><span class="line">　　getNameFunc : function()&#123;</span><br><span class="line">　　　　return function()&#123;</span><br><span class="line">　　　　　　return this.name;</span><br><span class="line">　　　　&#125;;</span><br><span class="line">　　&#125;</span><br><span class="line">&#125;;</span><br><span class="line">alert(object.getNameFunc()());</span><br></pre></td></tr></table></figure>
-<p>eg.2<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">var name = &quot;The Window&quot;;</span><br><span class="line">var object = &#123;</span><br><span class="line">    name : &quot;My Object&quot;,</span><br><span class="line">    getNameFunc : function()&#123;</span><br><span class="line">        var that = this;</span><br><span class="line">        return function()&#123;</span><br><span class="line">            return that.name;</span><br><span class="line">        &#125;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">alert(object.getNameFunc()());</span><br></pre></td></tr></table></figure></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">JavaScript</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/03/13/学习Javascript闭包（Closure）所感/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
     </nav>
   
 
@@ -728,6 +757,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">性能优化</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">css</a>
               </li>
              
@@ -736,11 +769,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">性能优化</a>
+                <a href="javascript:void(0)" class="js-tag color3">重构</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">重构</a>
+                <a href="javascript:void(0)" class="js-tag color1">移动端适配</a>
               </li>
             
             <div class="clearfix"></div>
