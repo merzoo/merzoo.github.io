@@ -15,7 +15,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/11/01/移动端适配方案之rem适配/index.html">
 <meta property="og:site_name" content="抹猪油の一隅">
 <meta property="og:description" content="这篇博文不讲概念，基本上是学习了网上文章后的最佳实践  问题 设计师给你一张视觉稿，要怎么样做到移动端设备适配呢？  准备材料 淘宝无线前端 lib-flexible 让设计师准备两份切图@2x @3x  步骤 删除常规的移动端 meta 标签（重要） 1&amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, i">
-<meta property="og:updated_time" content="2018-03-02T08:52:27.253Z">
+<meta property="og:updated_time" content="2018-03-02T08:56:33.021Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="移动端适配方案之rem适配">
 <meta name="twitter:description" content="这篇博文不讲概念，基本上是学习了网上文章后的最佳实践  问题 设计师给你一张视觉稿，要怎么样做到移动端设备适配呢？  准备材料 淘宝无线前端 lib-flexible 让设计师准备两份切图@2x @3x  步骤 删除常规的移动端 meta 标签（重要） 1&amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, i">
@@ -47,7 +47,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="null" class="js-avatar">
+			<img src="http://www.qqju.com/pic/tx/tx25462.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">Merzoo</a></h1>
@@ -105,7 +105,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="null" class="js-avatar">
+				<img src="http://www.qqju.com/pic/tx/tx25462.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">Merzoo</h1>
@@ -191,7 +191,7 @@
 <li><p>加上 flexbible meta 标签（可选）</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta content=&quot;maximum-dpr=2&quot; name=&quot;flexible&quot; /&gt;</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>引用 cdn 地址，插入到 <head> 中</head></p>
+<li><p>引用 cdn 地址，插入到 head 中</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;head&gt;</span><br><span class="line">...</span><br><span class="line">&lt;script src=&quot;http://g.tbcdn.cn/mtb/lib-flexible/0.3.2/??flexible_css.js,flexible.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;/head&gt;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>把视觉稿中的px转换成rem<br>工作中我们常见的视觉稿大小大至可为640、750、1125三种。不过flexible.js并没有限制只能用这三种，所以你还可以根据自身情况来调整，具体如何转换，我们以视觉稿为640px的宽来举例子，把640px分为100份，每一份称为一个单位a，那么每个a就是6.4px，而1rem单位被认定为10a，此时，1rem=1(a)X10X6.4(px)即64px。</p>
@@ -325,18 +325,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/11/01/一次移动端重构/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          一次移动端重构
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/01/10/由闭包到模块化——一起来实现一个模块加载器吧！/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">由闭包到模块化——一起来实现一个模块加载器吧！</div>
+    <a href="/2017/11/01/一次移动端重构/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">一次移动端重构</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -470,11 +461,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
+                <a href="javascript:void(0)" class="js-tag color5">性能优化</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">性能优化</a>
+                <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -482,11 +473,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">web</a>
+                <a href="javascript:void(0)" class="js-tag color3">重构</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">重构</a>
+                <a href="javascript:void(0)" class="js-tag color4">web</a>
               </li>
              
               <li class="article-tag-list-item">
